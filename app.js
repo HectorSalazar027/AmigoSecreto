@@ -1,4 +1,5 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// Salazar Rubi Héctor Manuel
 
 let amigos = [];
 
@@ -13,13 +14,11 @@ function agregarAmigo() {
         return;
     }
 
-    // Agregar el nombre al array
+    
     amigos.push(nombre);
 
-    // Limpiar el campo de entrada
     inputAmigo.value = "";
 
-    // Actualizar la lista en la interfaz
     actualizarListaAmigos();
 }
 
@@ -44,7 +43,7 @@ function sortearAmigo() {
     let indiceAleatorio = Math.floor(Math.random() * amigos.length);
     let amigoSeleccionado = amigos[indiceAleatorio];
     
-    // Limpiar la lista y mostrar el resultado
+    
     document.getElementById("listaAmigos").innerHTML = "";
     
     let resultado = document.getElementById("resultado");
